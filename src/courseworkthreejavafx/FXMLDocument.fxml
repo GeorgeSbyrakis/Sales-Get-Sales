@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane1" prefHeight="991.0" prefWidth="1371.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="courseworkthreejavafx.FXMLDocumentController">
+    <children>
+      <VBox fx:id="VBox1" spacing="10.0">
+         <children>
+            <HBox fx:id="HBox1" spacing="10.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <StackPane>
+               <children>
+                  <BarChart fx:id="BarChart1" prefHeight="430.0" prefWidth="449.0" title="Vehicle Sales (Region)">
+                    <xAxis>
+                      <CategoryAxis label="Region" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Sales" side="LEFT" upperBound="650.0" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </StackPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <LineChart fx:id="LineChart1" layoutX="511.0" layoutY="50.0" prefHeight="430.0" prefWidth="349.0" title="Line Chart of Vehicle Sales (By Region)">
+        <xAxis>
+          <CategoryAxis label="Region" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" upperBound="650.0" />
+        </yAxis>
+      </LineChart>
+      <PieChart fx:id="PieChart1" layoutX="14.0" layoutY="518.0" title="Pie Chart of Vehicle sales" />
+      <AreaChart fx:id="AreaChart1" layoutX="917.0" layoutY="47.0" prefHeight="415.0" prefWidth="365.0" title="Area Chart of Vehicle Sales">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <TableView fx:id="TableView1" layoutX="532.0" layoutY="518.0" prefHeight="415.0" prefWidth="750.0">
+        <columns>
+          <TableColumn prefWidth="150.0" text="Year" />
+          <TableColumn prefWidth="150.0" text="Qtr" />
+            <TableColumn prefWidth="150.0" text="Region" />
+            <TableColumn prefWidth="150.0" text="Vehicle" />
+            <TableColumn prefWidth="150.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <Text layoutX="527.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lotus Vehicle Sales" underline="true" wrappingWidth="317.107421875">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
